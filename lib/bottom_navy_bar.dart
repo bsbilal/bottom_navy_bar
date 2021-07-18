@@ -10,7 +10,7 @@ import 'package:flutter/widgets.dart';
 /// [selectedIndex] is required and must not be null.
 class BottomNavyBar extends StatelessWidget {
   BottomNavyBar({
-    Key? key,
+    Key key,
     this.selectedIndex = 0,
     this.showElevation = true,
     this.iconSize = 24,
@@ -208,10 +208,10 @@ class BottomNavyBarItem {
   final Color activeColor;
 
   /// The [icon] and [title] color defined when this item is not selected.
-  final Color? inactiveColor;
+  final Color inactiveColor;
 
   /// The alignment for the [title].
   ///
   /// This will take effect only if [title] it a [Text] widget.
-  final TextAlign? textAlign;
+  final TextAlign textAlign;
 }
